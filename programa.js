@@ -21,9 +21,9 @@ function score(context) {
 
 function mensaje(context, cadena) {
   const lon = (context.canvas.width - 53 * cadena.length) / 2;
-  context.ctx.fillStyle = "green";
+  context.ctx.fillStyle = "purple";
   context.ctx.clearRect(0, 0, context.canvas.width, context.canvas.height);
-  context.ctx.font = "bold 50px Rosewwod Std";
+  context.ctx.font = "bold 40px Rosewwod Std";
   context.ctx.fillText(cadena, lon, 220);
 }
 
@@ -111,7 +111,8 @@ function movimientoEnemigo(context) {
 function acabaJuegoSinEnemigos(context) {
   if (context.numEnemigos === 0) {
     console.log("no quedan mas enemigos.");
-    context.gameOver();
+    context.gameOver(true);
+    context.ganar.play();
   }
 }
 
@@ -177,6 +178,7 @@ window.onload = function () {
       context.disparo = document.getElementById("disparo");
       context.intro = document.getElementById("intro");
       context.fin = document.getElementById("fin");
+      context.ganar = document.getElementById("ganar");
       x = context.canvas.width / 2;
 
       let imagen = new Image();

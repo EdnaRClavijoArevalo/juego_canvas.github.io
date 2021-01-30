@@ -5,7 +5,7 @@ var KEY_RIGHT = 39;
 var KEY_DOWN = 40;
 var BARRA = 32;
 
-var colorBala = "red";
+var colorBala = "black";
 
 function Context(ctx, canvas) {
   this.canvas = canvas;
