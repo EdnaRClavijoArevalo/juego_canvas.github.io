@@ -184,7 +184,7 @@ window.onload = function () {
       imagen.onload = function () {
         context.jugador = new Jugador(context.ctx, imagen, 0);
         context.jugador.dibuja(x);
-        setTimeout(anima, 3500, context);
+        setTimeout(anima, 0, context);
       };
 
       let imagenEnemigo = new Image();

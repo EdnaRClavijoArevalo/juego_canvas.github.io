@@ -84,9 +84,9 @@ function Enemigo(parent, body, x, y) {
   this.aunVive = function () {
     if (this.vive) {
       if (this.figura) {
-        this.ctx.drawImage(this.body, 0, 0, 40, 30, this.x, this.y, 35, 30);
+        this.ctx.drawImage(this.body, 0, 0, 50, 50, this.x, this.y, 50, 50);
       } else {
-        this.ctx.drawImage(this.body, 50, 0, 35, 30, this.x, this.y, 35, 30);
+        this.ctx.drawImage(this.body, 50, 50, 50, 50, this.x, this.y, 50, 50);
       }
     } else {
       this.ctx.fillStyle = "black";
