@@ -188,7 +188,7 @@ window.onload = function () {
       };
 
       let imagenEnemigo = new Image();
-      imagenEnemigo.src = "imagenes/invader.fw.png";
+      imagenEnemigo.src = "imagenes/alien_esbirro.png";
       imagenEnemigo.onload = function () {
         for (let col = 0; col < 5; col++) {
           for (let row = 0; row < 10; row++) {
@@ -197,7 +197,7 @@ window.onload = function () {
                 context.ctx,
                 imagenEnemigo,
                 100 + 40 * row,
-                30 + 45 * col
+                50 + 45 * col
               )
             );
           }
